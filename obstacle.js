@@ -8,8 +8,8 @@ class Obstacle {
     this.width = 30;
     this.counted = false;
   }
-  draw() {
-    ctx.fillStyle = "black";
+  draw() { //////drawing obstacle///////////
+    ctx.fillStyle = "azure";
     ctx.fillRect(this.x, 0, this.width, this.top);
     ctx.fillRect(
       this.x,
@@ -20,7 +20,7 @@ class Obstacle {
   }
   update() {
     this.x -= gamespeed;
-    if (!this.counted && this.x < disk.x) {
+    if (!this.counted && this.x < disk.x) { //////counting score/////////
       score++;
       this.counted = true;
     }

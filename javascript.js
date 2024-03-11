@@ -15,8 +15,3 @@ function enter() {
     return;
   }
 }
-
-
-
-
-

@@ -8,7 +8,7 @@ class Disk {
     this.vy = 0; //used for jumping method
     this.width = 30; //size of
     this.height = 40; //character
-    this.weight = 1; ////////////how heavy is the disk
+    this.weight = 0.7; ////////////how heavy is the disk
   }
   update() {
     if (this.y > playground.height - this.height * 3) {
@@ -31,7 +31,7 @@ class Disk {
     ctx.drawImage(player, this.x - 1, this.y - 35, this.width, this.height);
   } //creating character
   flap() {
-    this.vy -= 1.9; //how high jump
+    this.vy -= 1.8; //how high jump
   }
 }
 const disk = new Disk();
